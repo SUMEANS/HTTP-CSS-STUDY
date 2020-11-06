@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>media queries</title>
+        <style>
+            body{
+                display:flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction:column;  
+            }
+
+            div{
+                background-color: teal;
+                width: 200px;
+                height: 200px;
+
+            }
+
+            span{
+               
+                font-size: 70px;
+            }
+
+            @media screen and (max-width: 600px){
+                div{
+                    background-color: tomato;
+                }
+            }
+
+            @media screen and (min-width:601px) and (max-width:1200px) and (orientation: portrait) {
+                div{
+                    background-color:yellow;
+                }
+            }
+
+            @media screen and (orientation: landscape){
+                span{
+                    display:none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <span>으랄차차차차차차차르르라라차차차ㅏ</span>
+    </body>
+</html>

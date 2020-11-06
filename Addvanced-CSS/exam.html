@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+    <title>Loading pages</title>
+         <style> 
+    
+            @keyframes loading {
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                background-color: turquoise;
+                transform: translateY(-70px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+            }
+            
+        html{
+            background-color: white;
+        }
+        body{ 
+           
+            height: 100vh;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:50px;
+            background-color: hsl(51, 100%, 72%);
+        }
+      
+       
+
+        form{
+           
+            width:90vh;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+        }
+
+        div{
+            display:flex;
+            border: 30px solid black;
+            border-radius: 50%;
+            
+        }
+
+        div:nth-child(odd){
+            border-color: black;
+            animation: loading 2s ease-in-out infinite;
+
+        }
+
+        @media screen and (max-width: 600px){
+                div{
+                    background-color: tomato;
+                }
+            }
+    
+        </style>
+    </head>
+    <body>
+        <form>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </form>
+    </body>
+</html>
+
+
