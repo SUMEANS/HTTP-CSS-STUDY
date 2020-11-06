@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>recap</title>
+        <style>
+
+            :root{
+                --main-color: #d8bfd8;
+
+            }
+            body{
+                height: 1000vh;
+                margin: 50px;
+            }
+            
+
+            input::placeholder{
+                color:slateblue;
+            }
+            input + p::selection{
+                background-color: var(--main-color);
+            }
+           p::first-letter{
+               color:purple;
+               font-size : 30px;
+
+           }
+           form,div{
+               display:flex;
+               justify-content: center;
+               align-items: center;
+           }
+           input 
+           
+           input[type="submit"]{
+               border: 5px solid purple; 
+               border-radius: 10px;
+               background-color: rebeccapurple;
+               color: whitesmoke;
+
+           }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" required placeholder="Name" />
+            <input  type="submit"  value="전송"  />  
+        </form>
+        <div>       
+        <p>dsklfjs;lafjsldafjs;ldfjasldk;jgdklsajfdlskajfdaslfjdsalkfjdflksdj</p>
+      </div>
+    </body>
+
+</html>
