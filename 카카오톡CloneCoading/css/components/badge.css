@@ -1,0 +1,32 @@
+.badge{
+    background-color: #E85E4D;
+    width: 20px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-weight:600px;
+}
+
+.badge-point{
+    background-color: #E85E4D;
+    width:5px;
+    height:5px;
+    border-radius: 2.5px;
+}
+
+.badge-heart{
+    display:flex;
+    align-items: center;
+    color:white;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.badge-heart span{
+    margin-left:3px;
+}
